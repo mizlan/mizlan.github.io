@@ -1,5 +1,6 @@
-h1, h2, h3, h4 {
+h1, h2, h3, h4, p {
     font-family: 'Victor Mono';
+    /* font-family: monospace; */
     font-weight: 200;
 }
 
@@ -19,15 +20,16 @@ body {
     position: relative;
 }
 
-#particles-js canvas {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
 p {
-    font-family: 'Victor Mono';
     margin-left: auto;
     margin-right: auto;
     width: 30em;
+}
+
+a:hover {
+    background-color: yellow;
+}
+
+.faded {
+    color: #a2a2a2;
 }
