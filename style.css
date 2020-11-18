@@ -1,7 +1,23 @@
-h1 {
+h1, h2, h3, h4 {
     font-family: 'Victor Mono';
+    font-weight: 200;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+h4 {
+    margin-top: 5px;
+}
+
+.centered {
+    text-align: center;
 }
 
 p {
     font-family: 'Victor Mono';
+    margin-left: auto;
+    margin-right: auto;
+    width: 30em;
 }
