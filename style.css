@@ -15,10 +15,14 @@ h4 {
     text-align: center;
 }
 
-#particles-js {
+body {
+    position: relative;
+}
+
+#particles-js canvas {
     position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0%);
+    width: 100%;
+    height: 100%;
 }
 
 p {
