@@ -1,3 +1,7 @@
+body {
+    position: fixed;
+}
+
 h1, h2, h3, h4 {
     font-family: 'Victor Mono';
     font-weight: 200;
