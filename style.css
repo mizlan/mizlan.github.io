@@ -1,7 +1,7 @@
 h1, h2, h3, h4, p {
-    font-family: 'Victor Mono';
+    font-family: 'Roboto Mono', monospace;
     /* font-family: monospace; */
-    font-weight: 200;
+    /* font-weight: 200; */
 }
 
 h1 {
