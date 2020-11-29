@@ -1,11 +1,12 @@
 h1, h2, h3, h4, p {
     font-family: 'Roboto Mono', monospace;
+    color: #000000;
     /* font-family: monospace; */
     /* font-weight: 200; */
 }
 
 h1 {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 h4 {
@@ -26,10 +27,32 @@ p {
     width: 30em;
 }
 
+a {
+    color: #000000;
+    background-color: #fff0fa;
+    -webkit-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+}
+
 a:hover {
     background-color: #f0d3e6;
 }
 
 .faded {
     color: #a2a2a2;
+}
+
+.paint {
+    background: url('./brush.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 8px 10px;
+}
+
+#top {
+    width: 20em;
+    margin-left: auto;
+    margin-right: auto;
 }
