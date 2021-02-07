@@ -1,53 +1,59 @@
+:root {
+    --bg-color: #f7eed7; /* background */
+    --fg-color: #000000; /* foreground */
+    --hl-color: #ebe2cc; /* highlight */
+    --hv-color: #d9d1bd; /* hover */
+}
+
 html {
     font-size: 100%;
     font-family: 'Roboto Mono', monospace;
-    /* font-family: 'Roboto', sans-serif; */
 }
 
 body {
     position: relative;
-    background-color: #f7eed7;
-    font-size: 2rem;
+    background-color: var(--bg-color);
+    font-size: 1rem;
 }
 
 h1 {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .heading-caption {
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .noselect {
-  -webkit-touch-callout: none;
+    -webkit-touch-callout: none;
     -webkit-user-select: none;
-     -khtml-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .icon {
     position: absolute;
     top: calc(0% - 9rem);
     left: calc(0% - 4rem);
-    margin: 0px;
+    margin: 0;
     font-size: 15rem;
-    color: #d9d1bd;
+    color: var(--hv-color);
     z-index: -1;
 }
 
 .quote-caption, q {
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 a {
-    color: #000000;
-    background-color: #ebe2cc;
+    color: var(--fg-color);
+    background-color: var(--hl-color);
 }
 
 a:hover {
-    background-color: #d9d1bd;
+    background-color: var(--hv-color);
 }
 
 .content {
@@ -56,4 +62,13 @@ a:hover {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+    text-align: left;
+}
+
+/* adjustments to mobile-esque devices */
+@media only screen and (max-width: 40rem) {
+    .content {
+        text-align: center;
+        width: 80%;
+    }
 }
