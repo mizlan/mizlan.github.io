@@ -84,7 +84,7 @@ a:hover {
   overflow: hidden;
   position: relative;
   top: 0;
-  height: 3px;
+  height: 0.6vh;
   background-color: transparent;
   z-index: -1;
 }
