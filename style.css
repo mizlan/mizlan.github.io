@@ -44,44 +44,89 @@ h1 {
 /* } */
 
 .icon {
-    position: absolute;
-    top: calc(0% - 9rem);
-    left: calc(0% - 4rem);
-    margin: 0;
-    font-size: 15rem;
-    color: var(--hv-color);
-    z-index: -1;
+  position: absolute;
+  top: calc(0% - 9rem);
+  left: calc(0% - 4rem);
+  margin: 0;
+  font-size: 15rem;
+  color: var(--hv-color);
+  z-index: -1;
 }
 
-.quote-caption, q {
-    margin-top: 0;
+.quote-caption,
+q {
+  margin-top: 0;
 }
 
 a {
-    color: var(--fg-color);
-    background-color: var(--hl-color);
-    border-radius: 0.5rem;
-    padding: 5px;
-    transition: background-color 0.5s ease;
+  color: var(--fg-color);
+  background-color: var(--hl-color);
+  border-radius: 0.5rem;
+  padding: 5px;
+  transition: background-color 0.5s ease;
 }
 
 a:hover {
-    background-color: var(--hv-color);
+  background-color: var(--hv-color);
 }
 
 .content {
-    position: relative;
-    margin-top: 10%;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
+  position: relative;
+  margin-top: 10%;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.rainbow-strip-container {
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  height: 3px;
+  background-color: transparent;
+  z-index: -1;
+}
+
+.rainbow-internal {
+  background-size: 100% 100vw;
+  /* position: relative; */
+  width: 100vw;
+  height: 3px;
+  background-position: 0% 0vw;
+  background-repeat: repeat-x;
+  background-image: repeating-linear-gradient(
+    90deg,
+    #ff0000,
+    #ff7f00 8.3%,
+    #ffff00 16.6%,
+    #7fff00 24.9%,
+    #00ff00 33.2%,
+    #00ff7f 41.5%,
+    #00ffff 49.8%,
+    #007fff 58.1%,
+    #0000ff 66.4%,
+    #7f00ff 74.7%,
+    #ff00ff 83%,
+    #ff0000 90.2%,
+    #ff0000
+  );
+  animation: river 10s linear infinite;
+}
+
+@keyframes river {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100vw 0;
+  }
 }
 
 /* adjustments to mobile-esque devices */
 @media only screen and (max-width: 40rem) {
-    .content {
-        text-align: center;
-        width: 90%;
-    }
+  .content {
+    text-align: center;
+    width: 90%;
+  }
 }
