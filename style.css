@@ -12,6 +12,7 @@ html {
 }
 
 body {
+  margin: 0;
   position: relative;
   background-color: var(--bg-color);
   font-size: 1.4rem;
@@ -93,7 +94,7 @@ a:hover {
   background-size: 100% 100vw;
   /* position: relative; */
   width: 100vw;
-  height: 3px;
+  height: 100%;
   background-position: 0% 0vw;
   background-repeat: repeat-x;
   background-image: repeating-linear-gradient(
@@ -112,7 +113,7 @@ a:hover {
     #ff0000 90.2%,
     #ff0000
   );
-  animation: river 10s linear infinite;
+  animation: river 10s ease-in-out infinite;
 }
 
 @keyframes river {
