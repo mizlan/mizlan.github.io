@@ -1,8 +1,8 @@
 :root {
-  --bg-color: #f7eed7; /* background */
-  --fg-color: #292623; /* foreground */
-  --hl-color: #ebe2cc; /* highlight */
-  --hv-color: #d9d1bd; /* hover */
+  --bg-color: #46484d; /* background */
+  --fg-color: #edeef0; /* foreground */
+  --hl-color: #4d4f54; /* highlight */
+  --hv-color: #343538; /* hover */
 }
 
 html {
