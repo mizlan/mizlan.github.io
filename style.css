@@ -99,19 +99,19 @@ a:hover {
   background-repeat: repeat-x;
   background-image: repeating-linear-gradient(
     90deg,
-    #ff0000,
-    #ff7f00 8.3%,
-    #ffff00 16.6%,
-    #7fff00 24.9%,
-    #00ff00 33.2%,
+    #f56762,
+    #f5b862 8.3%,
+    #f5e662 16.6%,
+    #a4f562 24.9%,
+    #62f571 33.2%,
     #00ff7f 41.5%,
-    #00ffff 49.8%,
-    #007fff 58.1%,
-    #0000ff 66.4%,
-    #7f00ff 74.7%,
-    #ff00ff 83%,
-    #ff0000 90.2%,
-    #ff0000
+    #62f5ba 49.8%,
+    #62cef5 58.1%,
+    #6271f5 66.4%,
+    #a762f5 74.7%,
+    #f562df 83%,
+    #f56762 90.2%,
+    #f56762
   );
   animation: river 10s ease-in-out infinite;
 }
