@@ -1,7 +1,7 @@
 :root {
-  --bg-color: #46484d; /* background */
+  --bg-color: #2b2e2e; /* background */
   --fg-color: #edeef0; /* foreground */
-  --hl-color: #4d4f54; /* highlight */
+  --hl-color: #3b4040; /* highlight */
   --hv-color: #343538; /* hover */
 }
 
@@ -20,6 +20,7 @@ body {
 
 h1 {
   font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .heading-caption {
