@@ -7,7 +7,9 @@
 
 html {
   font-size: 100%;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto";
+  font-weight: 100;
+  /* font-family: "Roboto Mono", monospace; */
 }
 
 body {
@@ -19,7 +21,8 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
+  font-family: "Bebas Neue";
+  font-size: 5rem;
   margin-bottom: 0.5rem;
 }
 
@@ -36,6 +39,11 @@ h1 {
   user-select: none;
 }
 
+.splatter {
+  width: 50%;
+  position: absolute;
+  left: 5%;
+}
 /* .logo { */
 /*     position: absolute; */
 /*     z-index: -1; */
@@ -62,8 +70,9 @@ q {
 
 a {
   color: var(--fg-color);
+  text-decoration: none;
   background-color: var(--hl-color);
-  border-radius: 0.5rem;
+  /* border-radius: 0.5rem; */
   padding: 5px;
   transition: background-color 0.5s ease;
 }
