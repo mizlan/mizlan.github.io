@@ -108,21 +108,12 @@ a:hover {
   background-repeat: repeat-x;
   background-image: repeating-linear-gradient(
     90deg,
-    #f56762,
-    #f5b862 8.3%,
-    #f5e662 16.6%,
-    #a4f562 24.9%,
-    #62f571 33.2%,
-    #00ff7f 41.5%,
-    #62f5ba 49.8%,
-    #62cef5 58.1%,
-    #6271f5 66.4%,
-    #a762f5 74.7%,
-    #f562df 83%,
-    #f56762 90.2%,
-    #f56762
+    #fadedc,
+    #c7b1af 33.3%,
+    #8f7c7b 66.6%,
+    #fadedc
   );
-  animation: river 10s ease-in-out infinite;
+  animation: river 5s ease-in-out infinite;
 }
 
 @keyframes river {
