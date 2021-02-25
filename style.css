@@ -109,8 +109,8 @@ a:hover {
   background-image: repeating-linear-gradient(
     90deg,
     #fadedc,
-    #c7b1af 33.3%,
-    #8f7c7b 66.6%,
+    #cad0e8 33.3%,
+    #e8dfca 66.6%,
     #fadedc
   );
   animation: river 5s ease-in-out infinite;
