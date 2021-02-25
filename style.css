@@ -1,15 +1,14 @@
 :root {
-  --bg-color: #2b2e2e; /* background */
+  --bg-color: #424445; /* background */
   --fg-color: #edeef0; /* foreground */
-  --hl-color: #3b4040; /* highlight */
-  --hv-color: #343538; /* hover */
+  /* --hl-color: #3b4040; /\* highlight *\/ */
+  /* --hv-color: #343538; /\* hover *\/ */
 }
 
 html {
   font-size: 100%;
   font-family: "Roboto";
   font-weight: 100;
-  /* font-family: "Roboto Mono", monospace; */
 }
 
 body {
