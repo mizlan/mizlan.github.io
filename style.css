@@ -107,7 +107,7 @@ a:hover {
   overflow: hidden;
   position: relative;
   top: 0;
-  height: 0.2rem;
+  height: 0.5rem;
   background-color: transparent;
   z-index: -1;
 }
