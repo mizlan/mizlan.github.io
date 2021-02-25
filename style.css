@@ -25,6 +25,20 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
+p {
+  font-size: 2.5rem;
+}
+
+.bongo {
+  position: fixed;
+  bottom: 0px;
+  right: 5rem;
+  filter: contrast(80%) grayscale(20%);
+  display: block;
+  height: auto;
+  max-width: 50vw;
+}
+
 .heading-caption {
   margin-top: 0;
 }
