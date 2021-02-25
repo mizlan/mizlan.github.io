@@ -72,7 +72,7 @@ p {
   left: calc(0% - 4rem);
   margin: 0;
   font-size: 15rem;
-  color: var(--hv-color);
+  /* color: var(--hv-color); */
   z-index: -1;
 }
 
