@@ -114,15 +114,6 @@ a:hover::after {
   text-align: left;
 }
 
-.rainbow-strip-container {
-  overflow: hidden;
-  position: relative;
-  top: 0;
-  height: 0.5rem;
-  background-color: transparent;
-  z-index: -1;
-}
-
 .rainbow-internal {
   background-size: 100% 100vw;
   /* position: relative; */
