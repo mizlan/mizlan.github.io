@@ -115,10 +115,11 @@ a:hover::after {
 }
 
 .rainbow-internal {
-  background-size: 100% 100vw;
-  /* position: relative; */
+  position: fixed;
+  top: 0rem;
   width: 100vw;
-  height: 100%;
+  height: 0.5rem;
+  background-size: 100% 100vw;
   background-position: 0% 0vw;
   background-repeat: repeat-x;
   background-image: repeating-linear-gradient(
