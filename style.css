@@ -84,6 +84,7 @@ q {
 a {
   color: var(--fg-color);
   text-decoration: none;
+  font-weight: 500;
   display: inline-block;
 }
 
