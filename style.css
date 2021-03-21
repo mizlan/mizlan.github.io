@@ -66,8 +66,8 @@ a:visited {
   filter: contrast(80%) grayscale(20%) opacity(80%);
   display: block;
   height: auto;
-  max-width: 50vw;
-  max-height: 30vh;
+  max-width: 30vw;
+  max-height: 20vh;
 }
 
 .heading-caption {
