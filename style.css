@@ -46,6 +46,12 @@ h1 {
 p {
   font-size: 2.5rem;
 }
+ul {
+  list-style-position: inside;
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
 
 a:link {
   color: var(--a-link);
@@ -171,8 +177,9 @@ a:hover::after {
 /* adjustments to mobile-esque devices */
 @media only screen and (max-width: 40rem) {
   .content {
-    text-align: center;
+    /* text-align: center; */
     width: 90%;
   }
+
   /* no need for bongo adjustments yet */
 }
