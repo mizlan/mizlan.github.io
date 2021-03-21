@@ -1,39 +1,69 @@
 :root {
-  --bg-color: #424445; /* background */
-  --fg-color: #edeef0; /* foreground */
-  /* --hl-color: #3b4040; /\* highlight *\/ */
-  /* --hv-color: #343538; /\* hover *\/ */
+  /* lunaria colors */
+  --bg: rgba(92.09%,89.35%,88.07%,1.000);
+  --fg: rgba(28.29%,27.52%,27.65%,1.000);
+  --subtle: rgba(51.12%,49.60%,49.08%,1.000);
+  --h1: rgba(24.25%,23.63%,23.93%,1.000);
+  --a-link: rgba(7.06%,30.01%,44.37%,1.000);
+  --a-visited: rgba(47.03%,24.68%,38.31%,1.000);
+  --hl-text: rgba(0.00%,30.38%,42.50%,0.250);
+  --a-hl: rgba(51.12%,49.60%,49.08%,0.250);
+}
+
+::selection {
+  background: var(--hl-text);
+}
+::-moz-selection {
+  background: var(--hl-text);
 }
 
 html {
   font-size: 100%;
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
+  font-family: 'Neuton', serif;
 }
 
 body {
   margin: 0;
   position: relative;
-  background-color: var(--bg-color);
+  background-color: var(--bg);
   font-size: 1.4rem;
-  color: var(--fg-color);
+  color: var(--fg);
 }
 
 h1 {
-  font-family: "Bebas Neue";
-  font-size: 5rem;
+  font-size: 3rem;
   margin-bottom: 0.5rem;
+  color: var(--h1);
+}
+
+.subtitle {
+  margin-top: 0;
+  font-size: 1.4rem;
+  font-style: italic;
+  color: var(--fg);
 }
 
 p {
   font-size: 2.5rem;
 }
 
+a:link {
+  color: var(--a-link);
+}
+
+a:hover {
+  background-color: var(--a-hl);
+}
+
+a:visited {
+  color: var(--a-visited);
+}
+
 .bongo {
   position: fixed;
   bottom: 0px;
   right: 5rem;
-  filter: contrast(80%) grayscale(20%);
+  filter: contrast(80%) grayscale(20%) opacity(80%);
   display: block;
   height: auto;
   max-width: 50vw;
@@ -53,20 +83,6 @@ p {
   user-select: none;
 }
 
-.splatter {
-  width: 50%;
-  position: absolute;
-  left: 5%;
-}
-/* .logo { */
-/*     position: absolute; */
-/*     z-index: -1; */
-/*     filter: hue-rotate(50deg); */
-/*     top: calc(0% - 10rem); */
-/*     left: calc(0% - 4.6rem); */
-/*     width: 15rem; */
-/* } */
-
 .icon {
   position: absolute;
   top: calc(0% - 9rem);
@@ -82,8 +98,11 @@ q {
   margin-top: 0;
 }
 
+/* animated lines under CSS links
+ ********************************
+
 a {
-  color: var(--fg-color);
+  color: var(--fg);
   text-decoration: none;
   font-weight: 400;
   display: inline-block;
@@ -95,7 +114,7 @@ a::after {
   height: 0.15rem;
   display: block;
   border-radius: 0.1rem;
-  background-color: var(--fg-color);
+  background-color: var(--fg);
   position: relative;
   left: 50%;
   transition: width 0.5s, left 0.5s;
@@ -106,6 +125,8 @@ a:hover::after {
   left: 0%;
 }
 
+*/
+
 .content {
   position: relative;
   margin-top: 10%;
@@ -114,6 +135,9 @@ a:hover::after {
   margin-right: auto;
   text-align: left;
 }
+
+/* animated rainbow gradient
+ ***************************
 
 .rainbow-internal {
   position: fixed;
@@ -141,6 +165,8 @@ a:hover::after {
     background-position: 100vw 0;
   }
 }
+
+*/
 
 /* adjustments to mobile-esque devices */
 @media only screen and (max-width: 40rem) {
