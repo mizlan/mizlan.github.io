@@ -8,6 +8,7 @@
   --a-visited: rgba(47.03%,24.68%,38.31%,1.000);
   --hl-text: rgba(0.00%,30.38%,42.50%,0.250);
   --a-hl: rgba(51.12%,49.60%,49.08%,0.250);
+  --deemph-fg: rgba(51.12%,49.60%,49.08%,1.000);
 }
 
 ::selection {
@@ -25,6 +26,7 @@ html {
 body {
   margin: 0;
   position: relative;
+  /* background-color: var(--deemph-fg); */
   background-color: var(--bg);
   font-size: 1.4rem;
   color: var(--fg);
@@ -33,6 +35,7 @@ body {
 h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
+  margin-top: 0;
   color: var(--h1);
 }
 
@@ -71,12 +74,11 @@ a:visited {
 .bongo {
   position: fixed;
   bottom: 0px;
-  right: 5rem;
-  filter: contrast(80%) grayscale(20%) opacity(80%);
+  right: 2vw;
+  filter: contrast(80%) grayscale(20%);
   display: block;
   height: auto;
-  max-width: 30vw;
-  max-height: 20vh;
+  width: 10vw;
 }
 
 .heading-caption {
@@ -139,10 +141,14 @@ a:hover::after {
 .content {
   position: relative;
   margin-top: 10%;
+  margin-bottom: 10%;
   width: 60%;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
+  background-color: var(--bg);
+  padding: 2rem;
+  border-radius: 0.4rem;
 }
 
 /* animated rainbow gradient
@@ -182,7 +188,13 @@ a:hover::after {
   .content {
     /* text-align: center; */
     width: 90%;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 0;
   }
 
   /* no need for bongo adjustments yet */
+  .bongo {
+    display: none;
+  }
 }
