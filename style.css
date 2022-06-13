@@ -523,6 +523,7 @@ a:hover::after {
 */
 
 .content {
+  box-sizing: border-box;
   position: relative;
   margin-top: 10%;
   margin-bottom: 10%;
@@ -572,7 +573,7 @@ a:hover::after {
   .content {
     /* text-align: center; */
     width: 90%;
-    margin-top: 0;
+    margin-top: 10%;
     margin-bottom: 0;
     border-radius: 0;
   }
