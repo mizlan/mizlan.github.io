@@ -380,7 +380,7 @@
 
 html {
   font-size: 100%;
-  font-family: 'Neuton', serif;
+  font-family: 'JetBrainsMono Nerd Font', serif;
 }
 
 body {
@@ -395,6 +395,7 @@ body {
 
 h1 {
   font-size: 3rem;
+  font-family: 'Lexend Deca', serif;
   margin-bottom: 0.5rem;
   margin-top: 0;
   color: var(--h1);
