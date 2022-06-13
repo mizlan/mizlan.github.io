@@ -375,6 +375,15 @@
 @font-face {
   font-family: 'JetBrains Mono';
   src: url('./JetBrains Mono Regular Nerd Font Complete Mono.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./JetBrains Mono Italic Nerd Font Complete Mono.ttf');
+  font-weight: normal;
+  font-style: italic;
 }
 
 @font-face {
