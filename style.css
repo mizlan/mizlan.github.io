@@ -370,6 +370,18 @@
   --deemph-fg: var(--lunaria-de-emph-fg);
 }
 
+
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./JetBrains Mono Regular Nerd Font Complete Mono.ttf');
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url('./LexendDeca-VariableFont_wght.ttf');
+}
+
 ::selection {
   background: var(--hl-text);
 }
@@ -380,7 +392,7 @@
 
 html {
   font-size: 100%;
-  font-family: 'JetBrainsMono Nerd Font', serif;
+  font-family: 'JetBrains Mono', serif;
 }
 
 body {
