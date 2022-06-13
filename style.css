@@ -400,7 +400,7 @@
 }
 
 html {
-  font-size: 100%;
+  font-size: 18px;
   font-family: 'JetBrains Mono', serif;
 }
 
@@ -410,12 +410,12 @@ body {
     /* background-color: var(--deemph-fg); */
   background-color: var(--bg);
   background-image: url(./topography.svg);
-  font-size: 1.4rem;
+  font-size: 1rem;
   color: var(--fg);
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: 'Lexend Deca', serif;
   margin-bottom: 0.5rem;
   margin-top: 0;
@@ -425,13 +425,13 @@ h1 {
 .subtitle {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-style: italic;
   color: var(--fg);
 }
 
 p {
-  font-size: 2.5rem;
+  font-size: 1rem;
 }
 
 ul {
@@ -570,6 +570,9 @@ a:hover::after {
 
 /* adjustments to mobile-esque devices */
 @media only screen and (max-width: 40rem) {
+  html {
+    font-size: 80%;
+  }
   .content {
     /* text-align: center; */
     width: 90%;
