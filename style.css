@@ -403,7 +403,7 @@ html {
   text-rendering: optimizeLegibility;
   font-size: 21px;
   font-weight: 500;
-  font-family: 'JetBrains Mono', serif;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 body {
@@ -417,9 +417,9 @@ body {
 }
 
 h1 {
-  font-feature-settings: "kern";
+  letter-spacing: 0.04em;
   font-size: 2rem;
-  font-family: 'Lexend Deca', serif;
+  font-family: 'Lexend Deca', sans-serif;
   margin-bottom: 0.5rem;
   margin-top: 0;
   color: var(--h1);
@@ -429,7 +429,6 @@ h1 {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 1rem;
-  font-feature-settings: "kern";
   font-style: italic;
   color: var(--fg);
 }
