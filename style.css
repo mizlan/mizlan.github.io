@@ -370,8 +370,6 @@
   --deemph-fg: var(--lunaria-de-emph-fg);
 }
 
-
-
 @font-face {
   font-family: 'JetBrains Mono';
   src: url('./JetBrains Mono Regular Nerd Font Complete Mono.ttf');
