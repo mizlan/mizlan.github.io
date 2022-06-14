@@ -416,6 +416,7 @@ body {
 h1 {
   letter-spacing: 0.04em;
   font-size: 2rem;
+  font-weight: 700;
   font-family: 'Lexend Deca', sans-serif;
   margin-bottom: 0.5rem;
   margin-top: 0;
