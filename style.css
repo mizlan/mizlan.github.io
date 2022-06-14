@@ -407,7 +407,6 @@ html {
 body {
   margin: 0;
   position: relative;
-    /* background-color: var(--deemph-fg); */
   background-color: var(--bg);
   background-image: url(./topography.svg);
   font-size: 1rem;
