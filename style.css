@@ -444,18 +444,6 @@ ul {
   margin-bottom: 0;
 }
 
-a:link {
-  color: var(--a-link);
-}
-
-a:hover {
-  background-color: var(--a-hl);
-}
-
-a:visited {
-  color: var(--a-visited);
-}
-
 .bongo {
   position: fixed;
   bottom: 0px;
@@ -494,23 +482,42 @@ q {
   margin-top: 0;
 }
 
-/* animated lines under CSS links
- ********************************
-
 a {
-  color: var(--fg);
   text-decoration: none;
-  font-weight: 400;
   display: inline-block;
 }
 
-a::after {
+a:link {
+  color: var(--a-link);
+}
+
+a:hover {
+  background-color: var(--a-hl);
+}
+
+a:visited {
+  color: var(--a-visited);
+}
+
+a:link::after {
   content: "";
   width: 0;
   height: 0.15rem;
   display: block;
   border-radius: 0.1rem;
-  background-color: var(--fg);
+  background-color: var(--a-link);
+  position: relative;
+  left: 50%;
+  transition: width 0.5s, left 0.5s;
+}
+
+a:visited::after {
+  content: "";
+  width: 0;
+  height: 0.15rem;
+  display: block;
+  border-radius: 0.1rem;
+  background-color: var(--a-visited);
   position: relative;
   left: 50%;
   transition: width 0.5s, left 0.5s;
@@ -520,8 +527,6 @@ a:hover::after {
   width: 100%;
   left: 0%;
 }
-
-*/
 
 .content {
   box-sizing: border-box;
