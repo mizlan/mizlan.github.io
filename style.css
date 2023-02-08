@@ -438,28 +438,15 @@ h1 {
 }
 
 .title {
-  /* color: var(--lunaria-emph-fg-dodrantopaque); */
   background: repeating-linear-gradient(
-    to left,
+    140deg,
     var(--lunaria-soft-magenta),
     var(--lunaria-soft-red),
-    var(--lunaria-soft-yellow-dodrantopaque),
-    var(--lunaria-soft-red),
-    var(--lunaria-soft-magenta)
+    var(--lunaria-soft-yellow-dodrantopaque)
   );
-  animation: river 12s ease-in-out infinite;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-@keyframes river {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 100vw 0;
-  }
 }
 
 .bottom-text {
