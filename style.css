@@ -368,41 +368,35 @@
   --hl-text: var(--lunaria-bg-dark-blue-quadrantopaque);
   --a-hl: var(--lunaria-de-emph-fg-quadrantopaque);
   --deemph-fg: var(--lunaria-de-emph-fg);
+  --wave-emoji: var(--lunaria-bg-yellow-quadrantopaque);
 }
 
 @font-face {
-  font-family: 'JetBrains Mono';
+  font-family: 'Lora';
   font-style: normal;
-  font-weight: normal;
-  src: url('./JetBrainsMono-Medium.woff2') format("woff2");
+  font-weight: 400;
+  src: url('./fonts/Lora-Regular.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'JetBrains Mono';
-  font-style: italic;
-  font-weight: normal;
-  src: url('./JetBrainsMono-MediumItalic.woff2') format("woff2");
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/Lora-Medium.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'IBM Plex Serif';
+  font-family: 'Lora';
   font-style: normal;
   font-weight: 700;
-  src: url("IBMPlexSerif-Bold-Latin1.woff2") format("woff2");
+  src: url('./fonts/Lora-Bold.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'IBM Plex Mono';
-  font-style: normal;
-  font-weight: 600;
-  src: url('./IBMPlexMono-SemiBold-Latin1.woff2') format("woff2");
-}
-
-@font-face {
-  font-family: 'IBM Plex Mono';
+  font-family: 'Lora';
   font-style: italic;
-  font-weight: 700;
-  src: url('./IBMPlexMono-BoldItalic-Latin1.woff2') format("woff2");
+  font-weight: 400;
+  src: url('./fonts/Lora-Italic.woff2') format('woff2');
 }
 
 ::selection {
@@ -415,9 +409,9 @@
 
 html {
   text-rendering: optimizeLegibility;
-  font-size: 22px;
-  font-weight: 500;
-  font-family: 'JetBrains Mono', monospace;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Lora', serif;
 }
 
 body {
@@ -433,22 +427,23 @@ h1 {
   font-size: 3.0rem;
   font-weight: 700;
   font-style: normal;
-  font-family: 'IBM Plex Serif', 'serif';
+  font-family: 'Lora', sans-serif;
   margin-bottom: 0;
   margin-top: 0;
 }
 
 .emoji-icon {
   color: transparent;
-  text-shadow: 0 0 var(--lunaria-bg-yellow-quadrantopaque);
+  text-shadow: 0 0 var(--wave-emoji);
 }
 
 .title {
+  /* color: var(--lunaria-emph-fg-dodrantopaque); */
   background: repeating-linear-gradient(
     to left,
     var(--lunaria-soft-magenta),
     var(--lunaria-soft-red),
-    var(--lunaria-soft-yellow),
+    var(--lunaria-soft-yellow-dodrantopaque),
     var(--lunaria-soft-red),
     var(--lunaria-soft-magenta)
   );
@@ -465,14 +460,6 @@ h1 {
   100% {
     background-position: 100vw 0;
   }
-}
-
-.subtitle {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 1rem;
-  font-style: italic;
-  color: var(--lunaria-de-emph-fg);
 }
 
 .bottom-text {
@@ -497,10 +484,15 @@ ul {
   position: fixed;
   bottom: 0px;
   right: 2vw;
-  filter: contrast(80%) grayscale(30%);
+  filter: contrast(90%) grayscale(20%);
   display: block;
   height: auto;
   width: 20vw;
+  transition: transform .2s ease-in-out, opacity 1s ease-out;
+}
+
+.bongo:hover {
+  transform: scale(1.09);
 }
 
 .heading-caption {
@@ -534,6 +526,7 @@ q {
 a {
   text-decoration: none;
   display: inline-block;
+  font-weight: 500;
 }
 
 a:link {
@@ -549,14 +542,17 @@ a:hover {
 }
 
 a:active {
-  color: var(--lunaria-soft-green);
-  outline: var(--lunaria-de-emph-bg) double 3px;
+  color: var(--lunaria-soft-blue);
+}
+
+a:visited:active {
+  color: var(--lunaria-soft-magenta);
 }
 
 a:link::after {
   content: "";
   width: 0;
-  height: 0.15rem;
+  height: 0.12rem;
   display: block;
   border-radius: 0.1rem;
   background-color: var(--a-link);
@@ -568,7 +564,7 @@ a:link::after {
 a:visited::after {
   content: "";
   width: 0;
-  height: 0.15rem;
+  height: 0.12rem;
   display: block;
   border-radius: 0.1rem;
   background-color: var(--a-visited);
@@ -596,38 +592,6 @@ a:hover::after {
   border-radius: 0.4rem;
 }
 
-/* animated rainbow gradient
- ***************************
-
-.rainbow-internal {
-  position: fixed;
-  top: 0rem;
-  width: 100vw;
-  height: 0.5rem;
-  background-size: 100% 100vw;
-  background-position: 0% 0vw;
-  background-repeat: repeat-x;
-  background-image: repeating-linear-gradient(
-    90deg,
-    #fadedc,
-    #dcf8fa 33.3%,
-    #ebdcfa 66.6%,
-    #fadedc
-  );
-  animation: river 5s ease-in-out infinite;
-}
-
-@keyframes river {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 100vw 0;
-  }
-}
-
-*/
-
 /* adjustments to mobile-esque devices */
 @media only screen and (max-width: 40rem) {
   html {
@@ -639,10 +603,5 @@ a:hover::after {
     margin-top: 10%;
     margin-bottom: 0;
     border-radius: 0;
-  }
-
-  /* no need for bongo adjustments yet */
-  .bongo {
-    width: 40vw;
   }
 }
