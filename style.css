@@ -530,8 +530,8 @@ a:hover::after {
 
 nav {
   box-sizing: border-box;
-  height: 5vh;
-  margin-top: 1rem;
+  height: 3vh;
+  margin-top: 2vh;
   font-family: 'Outfit';
   font-weight: 700;
   text-transform: uppercase;
