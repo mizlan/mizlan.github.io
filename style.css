@@ -371,34 +371,6 @@
   --wave-emoji: var(--lunaria-bg-yellow-quadrantopaque);
 }
 
-@font-face {
-  font-family: 'Lora';
-  font-style: normal;
-  font-weight: 400;
-  src: url('./fonts/Lora-Regular.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Lora';
-  font-style: normal;
-  font-weight: 500;
-  src: url('./fonts/Lora-Medium.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Lora';
-  font-style: normal;
-  font-weight: 700;
-  src: url('./fonts/Lora-Bold.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Lora';
-  font-style: italic;
-  font-weight: 400;
-  src: url('./fonts/Lora-Italic.woff2') format('woff2');
-}
-
 ::selection {
   background: var(--hl-text);
 }
@@ -409,9 +381,9 @@
 
 html {
   text-rendering: optimizeLegibility;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 400;
-  font-family: 'Lora', serif;
+  font-family: 'Lexend Deca', serif;
 }
 
 body {
@@ -424,12 +396,13 @@ body {
 }
 
 h1 {
-  font-size: 3.0rem;
-  font-weight: 700;
+  font-size: 4.0rem;
+  font-weight: 900;
   font-style: normal;
-  font-family: 'Lora', sans-serif;
   margin-bottom: 0;
   margin-top: 0;
+  font-family: 'Outfit';
+  text-transform: uppercase;
 }
 
 .emoji-icon {
@@ -474,7 +447,7 @@ ul {
   filter: contrast(90%) grayscale(20%);
   display: block;
   height: auto;
-  width: 20vw;
+  width: max(20vw, 15em);
   transition: transform .2s ease-in-out, opacity 1s ease-out;
 }
 
@@ -495,16 +468,6 @@ ul {
   user-select: none;
 }
 
-.icon {
-  position: absolute;
-  top: calc(0% - 9rem);
-  left: calc(0% - 4rem);
-  margin: 0;
-  font-size: 15rem;
-  /* color: var(--hv-color); */
-  z-index: -1;
-}
-
 .quote-caption,
 q {
   margin-top: 0;
@@ -513,7 +476,7 @@ q {
 a {
   text-decoration: none;
   display: inline-block;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 a:link {
@@ -539,7 +502,7 @@ a:visited:active {
 a:link::after {
   content: "";
   width: 0;
-  height: 0.12rem;
+  height: 0.23rem;
   display: block;
   border-radius: 0.1rem;
   background-color: var(--a-link);
@@ -565,18 +528,52 @@ a:hover::after {
   left: 0%;
 }
 
+nav {
+  box-sizing: border-box;
+  height: 5vh;
+  margin-top: 1rem;
+  font-family: 'Outfit';
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: min(1rem, 3vw);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: min(2rem, 5vw);
+  margin-right: min(2rem, 5vw);
+}
+
 .content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   box-sizing: border-box;
   position: relative;
+  min-height: 80vh;
   margin-top: 15vh;
   margin-bottom: 0;
   width: 60%;
-  margin-left: auto;
+  margin-left: 5vw;
   margin-right: auto;
   text-align: left;
   background-color: transparent;
   padding: 2rem;
   border-radius: 0.4rem;
+}
+
+.copyright {
+  margin-top: auto;
+  font-weight: 400;
+  font-size: 0.73rem;
+  color: var(--lunaria-medium-grey-semiopaque);
+  font-family: 'Inter';
 }
 
 /* adjustments to mobile-esque devices */
@@ -587,7 +584,7 @@ a:hover::after {
   .content {
     /* text-align: center; */
     width: 90%;
-    margin-top: 10%;
+    margin-top: 2vh;
     margin-bottom: 0;
     border-radius: 0;
   }
