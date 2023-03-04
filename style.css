@@ -383,7 +383,7 @@ html {
   text-rendering: optimizeLegibility;
   font-size: 19px;
   font-weight: 400;
-  font-family: 'Lexend Deca', serif;
+  font-family: 'Lexend Deca', sans-serif;
 }
 
 body {
@@ -548,6 +548,26 @@ nav ul li {
   display: inline;
   margin-left: min(2rem, 5vw);
   margin-right: min(2rem, 5vw);
+}
+
+#track {
+  display: flex;
+}
+
+#track p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--lunaria-medium-grey-dodrantopaque);
+}
+
+span {
+  color: var(--lunaria-dark-gray-dodrantopaque);
+}
+
+svg {
+  width: 1.4rem;
+  padding-right: 0.5rem;
 }
 
 .content {
