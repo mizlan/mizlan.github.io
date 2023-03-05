@@ -1,4 +1,4 @@
-const resp = fetch('https://recenttrack-mizlan.vercel.app/api/handler').then((res) => res.json())
+const resp = fetch('https://recenttrack.vercel.app/api/handler').then((res) => res.json())
 
 window.onload = () => {
   const bongo = document.querySelector('.bongo')
