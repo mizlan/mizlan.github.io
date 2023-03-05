@@ -403,6 +403,7 @@ h1 {
   margin-top: 0;
   font-family: 'Outfit';
   text-transform: uppercase;
+  transform: translateX(-0.16rem);
 }
 
 .emoji-icon {
@@ -447,7 +448,7 @@ ul {
   filter: contrast(90%) grayscale(20%);
   display: block;
   height: auto;
-  width: max(20vw, 15em);
+  width: max(20vw, 13rem);
   transition: transform .2s ease-in-out, opacity 1s ease-out;
 }
 
@@ -532,22 +533,26 @@ nav {
   box-sizing: border-box;
   height: 3vh;
   margin-top: 2vh;
+  margin-bottom: 0vh;
   font-family: 'Outfit';
   font-weight: 700;
   text-transform: uppercase;
   font-size: min(1rem, 3vw);
+  margin-left: 8vw;
+  margin-right: 8vw;
 }
 
 nav ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  column-gap: min(2rem, 5vw);
 }
 
 nav ul li {
   display: inline;
-  margin-left: min(2rem, 5vw);
-  margin-right: min(2rem, 5vw);
+  /* margin-left: min(2rem, 2vw); */
+  /* margin-right: min(2rem, 2vw); */
 }
 
 #track {
@@ -556,13 +561,19 @@ nav ul li {
 
 #track p {
   font-family: Inter;
+  line-height: 1.15rem;
   font-weight: 400;
   font-size: 0.8rem;
   color: var(--lunaria-medium-grey-dodrantopaque);
 }
 
-span {
+#track .music-line {
+  display: inline-block;
+}
+
+#track .info {
   color: var(--lunaria-dark-gray-dodrantopaque);
+  white-space: nowrap;
 }
 
 svg {
@@ -576,20 +587,21 @@ svg {
   flex-grow: 1;
   box-sizing: border-box;
   position: relative;
+  /* the following 2 together should be 95 */
   min-height: 80vh;
   margin-top: 15vh;
   margin-bottom: 0;
   width: 60%;
-  margin-left: 5vw;
+  margin-left: 8vw;
   margin-right: auto;
   text-align: left;
   background-color: transparent;
-  padding: 2rem;
-  border-radius: 0.4rem;
+  /* padding: 2rem; */
 }
 
 .copyright {
   margin-top: auto;
+  margin-bottom: 1.5rem;
   font-weight: 400;
   font-size: 0.73rem;
   color: var(--lunaria-medium-grey-semiopaque);
@@ -602,10 +614,17 @@ svg {
     font-size: 4vw;
   }
   .content {
-    /* text-align: center; */
     width: 90%;
-    margin-top: 2vh;
+    margin-top: 7vh;
+    min-height: 88vh;
     margin-bottom: 0;
-    border-radius: 0;
+  }
+
+  nav ul {
+    justify-content: space-between;
+  }
+  nav ul li {
+    flex-basis: 20%;
+    max-width: max-content;
   }
 }

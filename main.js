@@ -11,12 +11,12 @@ window.onload = () => {
 
   const track = document.querySelector('#track p')
   resp.then((json) => {
-    const name = `<span class=".info">${json['name']}</span>`
-    const artist = `<span class=".info">${json['artist']['#text']}</span>`
+    const name = `<span class="info">${json['name']}</span>`
+    const artist = `<span class="info">${json['artist']['#text']}</span>`
     if (json['@attr']?.['nowplaying'] == 'true') {
-      track.innerHTML = `Michael is currently listening to ${name} by ${artist}`
+      track.innerHTML = `<span class="music-line">Michael is currently listening to</span> <span class="music-line">${name} by ${artist}</span>`
     } else {
-      track.innerHTML = `Michael most recently listened to ${name} by ${artist}`
+      track.innerHTML = `<span class="music-line">Michael most recently listened to</span> <span class="music-line">${name} by ${artist}</span>`
     }
   })
 }
