@@ -568,6 +568,7 @@ nav ul li {
 
 #track a::after {
   height: 0.17rem;
+  background-color: var(--lunaria-soft-blue);
 }
 
 #track p {
