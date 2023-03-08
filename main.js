@@ -1,3 +1,4 @@
+// const resp = fetch('https://recenttrack-mizlan.vercel.app/api/handler').then((res) => res.json())
 const resp = fetch('https://recenttrack.vercel.app/api/handler').then((res) => res.json())
 
 window.onload = () => {
@@ -11,9 +12,17 @@ window.onload = () => {
 
   const track = document.querySelector('#track p')
   resp.then((json) => {
-    const name = `<span class="info">${json['name']}</span>`
-    const artist = `<span class="info">${json['artist']['#text']}</span>`
-    if (json['@attr']?.['nowplaying'] == 'true') {
+    console.log(json);
+    if (Math.random() < 0.5) {
+    // if (json.device == 'Michael\'s AirPods Pro') {
+      document.querySelector('#airpods').style.display = 'block'
+    } else {
+      document.querySelector('#laptop').style.display = 'block'
+    }
+    const name = `<span class="info"><a href="${json.songUrl}">${json.title}</a></span>`
+    const artist = `<span class="info">${json.artist}</span>`
+    if (json.isPlaying) {
+      // todo try adding span music line to "by artist"
       track.innerHTML = `<span class="music-line">Michael is currently listening to</span> <span class="music-line">${name} by ${artist}</span>`
     } else {
       track.innerHTML = `<span class="music-line">Michael most recently listened to</span> <span class="music-line">${name} by ${artist}</span>`

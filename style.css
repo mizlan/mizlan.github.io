@@ -477,7 +477,10 @@ q {
 a {
   text-decoration: none;
   display: inline-block;
-  font-weight: 500;
+}
+
+a::after {
+  height: 0.23rem;
 }
 
 a:link {
@@ -503,7 +506,7 @@ a:visited:active {
 a:link::after {
   content: "";
   width: 0;
-  height: 0.23rem;
+  /* height: 0.23rem; */
   display: block;
   border-radius: 0.1rem;
   background-color: var(--a-link);
@@ -515,7 +518,7 @@ a:link::after {
 a:visited::after {
   content: "";
   width: 0;
-  height: 0.12rem;
+  /* height: 0.12rem; */
   display: block;
   border-radius: 0.1rem;
   background-color: var(--a-visited);
@@ -559,7 +562,17 @@ nav ul li {
   display: flex;
 }
 
+#track a {
+  color: var(--lunaria-soft-blue);
+}
+
+#track a::after {
+  height: 0.17rem;
+}
+
 #track p {
+  margin-top: 0;
+  margin-bottom: 0;
   font-family: Inter;
   line-height: 1.15rem;
   font-weight: 400;
@@ -577,8 +590,8 @@ nav ul li {
 }
 
 svg {
-  width: 1.4rem;
   padding-right: 0.5rem;
+  transform: translateY(-1px);
 }
 
 .content {
