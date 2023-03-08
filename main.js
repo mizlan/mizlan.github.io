@@ -13,8 +13,8 @@ window.onload = () => {
   const track = document.querySelector('#track p')
   resp.then((json) => {
     console.log(json);
-    if (Math.random() < 0.5) {
-    // if (json.device == 'Michael\'s AirPods Pro') {
+    // if (Math.random() < 0.5) {
+    if (json.device == 'Michael\'s AirPods Pro') {
       document.querySelector('#airpods').style.display = 'block'
     } else {
       document.querySelector('#laptop').style.display = 'block'
